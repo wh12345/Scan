@@ -1,0 +1,51 @@
+*:focus{
+	outline:none; 
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*  */
+}
+#form {
+	width:300px;
+	margin: 20px auto;
+}
+p {
+	line-height: 1.6;
+}
+input,select {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color:#fff;
+	border:1px solid #ccc;
+	font-size:20px;
+	width:300px;
+	min-height:30px;
+	/*display:block;*/
+	margin-bottom:16px;
+	margin-top:8px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+input:focus, select:focus {
+	-webkit-box-shadow:0 0 25px #ccc;
+	-moz-box-shadow:0 0 25px #ccc;
+	box-shadow:0 0 25px #ccc;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+}
+/* The interesting bit */
+input:not(:focus), select:not(:focus) {
+	opacity:0.5;
+}
+input:required {
+	background:url("../img/asterisk_orange.png") no-repeat right 7px;						
+}
+input:valid{
+	background:url("../img/tick.png") no-repeat right 5px;			
+}		
+input:focus:invalid{
+      	background:url("../img/cancel.png") no-repeat right 7px;						
+}

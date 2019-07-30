@@ -1,0 +1,2 @@
+//按钮设置加载时间
+function wait() {swal({title: "请稍后..",showConfirmButton: false,imageUrl: "img/loading.gif",showCancelButton: false});window.setTimeout(function() {$(".sweet-overlay").css("display","none");$(".sweet-alert").css("display","none");},6000);}

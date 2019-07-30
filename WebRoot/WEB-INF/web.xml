@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ScanController</servlet-name>
+    <servlet-class>com.qiyan.servlet.ScanController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BackInfoServlet</servlet-name>
+    <servlet-class>com.qiyan.servlet.BackInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WxCodeServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.WxCodeServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PayRetServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.PayRetServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PayServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.PayServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WfInfoServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.WfInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetImgServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.GetImgServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetPayResultServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.GetPayResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InputPayServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.InputPayServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetJcHpzlServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.GetJcHpzlServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WfclcxServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.WfclcxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WfclOpenIdServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.WfclOpenIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SendVCodeServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.SendVCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WfclServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.WfclServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WxOpenIdServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.WxOpenIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WfclPayServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.WfclPayServlet</servlet-class>
+  </servlet>
+   <servlet>
+      <servlet-name>CreateCodeServlet</servlet-name>
+      <servlet-class>com.qiyan.servlet.CreateCodeServlet</servlet-class>
+  </servlet>
+
+  <!-- 启动webservice服务 -->
+  	<servlet>
+		<servlet-name>QuartzInitializer</servlet-name>
+		<display-name>Quartz Initializer Servlet</display-name>
+		<servlet-class>
+			org.quartz.ee.servlet.QuartzInitializerServlet
+		</servlet-class>
+	
+		<init-param>
+			<param-name>shutdown-on-unload</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>start-scheduler-on-load</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>
+			1
+		</load-on-startup>
+	</servlet>
+  <servlet>
+    <servlet-name>WfclxxServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.WfclxxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StatisticsInfoServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.qiyan.servlet.StatisticsInfoServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>ScanController</servlet-name>
+    <url-pattern>/Scan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackInfoServlet</servlet-name>
+    <url-pattern>/BackInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WxCodeServlet</servlet-name>
+    <url-pattern>/WxCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PayRetServlet</servlet-name>
+    <url-pattern>/PayRet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PayServlet</servlet-name>
+    <url-pattern>/Pay</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WfInfoServlet</servlet-name>
+    <url-pattern>/WfInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetImgServlet</servlet-name>
+    <url-pattern>/GetImgServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPayResultServlet</servlet-name>
+    <url-pattern>/GetPayResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InputPayServlet</servlet-name>
+    <url-pattern>/InputPayServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetJcHpzlServlet</servlet-name>
+    <url-pattern>/GetJcHpzlServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WfclcxServlet</servlet-name>
+    <url-pattern>/WfclcxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WfclOpenIdServlet</servlet-name>
+    <url-pattern>/WfclOpenIdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SendVCodeServlet</servlet-name>
+    <url-pattern>/SendVCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WfclServlet</servlet-name>
+    <url-pattern>/WfclServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WxOpenIdServlet</servlet-name>
+    <url-pattern>/WxOpenIdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WfclPayServlet</servlet-name>
+    <url-pattern>/WfclPayServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+      <servlet-name>CreateCodeServlet</servlet-name>
+      <url-pattern>/createCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WfclxxServlet</servlet-name>
+    <url-pattern>/WfclxxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StatisticsInfoServlet</servlet-name>
+    <url-pattern>/StatisticsInfoServlet</url-pattern>
+  </servlet-mapping>
+   <error-page> 
+        <error-code>404</error-code> 
+        <location>/404.jsp</location> 
+    </error-page> 
+    <error-page> 
+        <error-code>500</error-code> 
+        <location>/500.jsp</location> 
+    </error-page> 
+    
+     <jsp-config>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jstl/fmt</taglib-uri>
+    <taglib-location>/WEB-INF/fmt.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jstl/fmt-rt</taglib-uri>
+    <taglib-location>/WEB-INF/fmt-rt.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+    <taglib-location>/WEB-INF/c.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jstl/core-rt</taglib-uri>
+    <taglib-location>/WEB-INF/c-rt.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jstl/sql</taglib-uri>
+    <taglib-location>/WEB-INF/sql.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jstl/sql-rt</taglib-uri>
+    <taglib-location>/WEB-INF/sql-rt.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jstl/x</taglib-uri>
+    <taglib-location>/WEB-INF/x.tld</taglib-location>
+    </taglib>
+    <taglib>
+    <taglib-uri>http://java.sun.com/jstl/x-rt</taglib-uri>
+    <taglib-location>/WEB-INF/x-rt.tld</taglib-location>
+    </taglib>
+    </jsp-config>
+</web-app>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<quartz>   
+	<job> 
+		<job-detail>      
+			<name>定时产生电子处罚单</name>      
+			<group>ProduceEOT</group>      
+			<description>get</description>      
+			<job-class>com.qiyan.job.ProduceEOT</job-class>      
+			<volatility>false</volatility>      
+			<durability>false</durability>      
+			<recover>false</recover>
+		</job-detail> 
+		
+		<trigger>   
+			<cron>   
+				<name>定时产生电子处罚单</name>   
+				<group>AUTO</group>   
+				<job-name>ProduceEOT</job-name>   
+				<job-group>ProduceEOT</job-group>   
+				<cron-expression>* 0/1 * * * ?</cron-expression>   
+			</cron>   
+		</trigger>   
+	</job>
+	
+	<job> 
+		<job-detail>      
+			<name>定时统计平台信息并发送给指定人</name>      
+			<group>Statistics</group>      
+			<description>statistics</description>      
+			<job-class>com.qiyan.job.StatisticsJob</job-class>      
+			<volatility>false</volatility>      
+			<durability>false</durability>      
+			<recover>false</recover>
+		</job-detail> 
+		
+		<trigger>   
+			<cron>   
+				<name>定时统计平台信息并发送给指定人</name>   
+				<group>AUTO</group>   
+				<job-name>Statistics</job-name>   
+				<job-group>Statistics</job-group>   
+				<cron-expression>* 5 9 * * ?</cron-expression>   
+			</cron>   
+		</trigger>   
+	</job>
+	
+	
+</quartz>
